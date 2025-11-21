@@ -11,8 +11,6 @@ The project includes:
 - Real-time price estimation UI
 - Sample listings, hero slider, search filter, and more
 
----
-
 ## Features
 
 ###  **Frontend**
@@ -59,28 +57,6 @@ The pipeline includes:
   - XGBoost Regressor  
   - Tuned hyperparameters  
   - ~87% prediction accuracy
-
-
-## Project Structure
-
-ExploreHomes/
-│
-├── app.py # Flask backend
-├── models/
-│ └── bangalore_xgb_model.pkl
-│
-├── static/
-│ ├── style.css
-│ ├── script.js
-│ └── images/
-│
-├── templates/
-│ ├── index.html
-│ ├── predict.html
-│ ├── about.html
-│ └── contact.html
-|
-└── README.md
 
 ## Future Improvements
 
