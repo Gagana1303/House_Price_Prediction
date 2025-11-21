@@ -1,6 +1,6 @@
 # House_Price_Prediction
 
-# 🏡 ExploreHomes – Bangalore House Price Prediction (XGBoost + Flask + Frontend)
+#  ExploreHomes – Bangalore House Price Prediction (XGBoost + Flask + Frontend)
 
 ExploreHomes is a complete **end-to-end real estate price prediction platform** that estimates Bangalore house prices using a trained **XGBoost Machine Learning model**.  
 The project includes:
@@ -13,9 +13,9 @@ The project includes:
 
 ---
 
-## 🚀 Features
+## Features
 
-### ✅ **Frontend**
+###  **Frontend**
 - Modern and clean UI design  
 - Hero image slider  
 - Real-estate sample cards  
@@ -24,16 +24,15 @@ The project includes:
   - Location input
   - Sqft, BHK, Bathroom fields  
   - AI price estimation  
-  - Similar property comparison  
-- Mobile responsive layout  
-
-### ✅ **Backend**
+  - Similar property comparison
+  - 
+### **Backend**
 - Flask-based REST API (`/api/predict`)
 - Loads trained XGBoost pipeline
 - Cleans and normalizes locations before prediction
 - Handles unknown locations gracefully (“Other” category)
 
-### ✅ **Machine Learning**
+### **Machine Learning**
 - XGBoost Regression Model (R² ≈ 0.82)
 - Automatic preprocessing pipeline:
   - OneHotEncoding for location
@@ -41,9 +40,7 @@ The project includes:
   - Custom location cleaning
 - Outlier handling and feature engineering
 
----
-
-## 🧠 How the ML Model Works
+## How the ML Model Works
 
 The model is trained using the Bangalore House Dataset.  
 The pipeline includes:
@@ -53,7 +50,6 @@ The pipeline includes:
   - Extract BHK from description
   - Remove unrealistic sqft/BHK ratios
   - Price per sqft analysis
-  - Location grouping (rare → “Other”)
 
 - **Encoding**
   - OneHotEncoder for 120+ Bangalore locations  
@@ -62,9 +58,35 @@ The pipeline includes:
 - **Model**
   - XGBoost Regressor  
   - Tuned hyperparameters  
-  - ~82% prediction accuracy
+  - ~87% prediction accuracy
 
----
 
-## 🗂 Project Structure
+## Project Structure
+
+ExploreHomes/
+│
+├── app.py # Flask backend
+├── models/
+│ └── bangalore_xgb_model.pkl
+│
+├── static/
+│ ├── style.css
+│ ├── script.js
+│ └── images/
+│
+├── templates/
+│ ├── index.html
+│ ├── predict.html
+│ ├── about.html
+│ └── contact.html
+|
+└── README.md
+
+## Future Improvements
+
+- Auto-suggest locations dropdown
+- Google Places API integration
+- Interactive map view
+- Deployment on Render/Railway/Heroku
+
 
